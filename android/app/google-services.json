@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "879563480078",
+    "project_id": "nexara-f6829",
+    "storage_bucket": "nexara-f6829.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879563480078:android:4ff138a84dd6b9c353f05f",
+        "android_client_info": {
+          "package_name": "com.example.nexara"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0_6SpjCgfzt4xVBctDWp8RAk9LqDZkk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
