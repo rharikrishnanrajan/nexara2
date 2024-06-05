@@ -5,7 +5,7 @@ import 'package:nexara/pages/home_page.dart';
 void main()async  {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  await Future.delayed(Duration(seconds: 3),);
+  await Future.delayed(const Duration(seconds: 3),);
   FlutterNativeSplash.remove();
   runApp(const MaterialApp(
     home: MyApp1(),
