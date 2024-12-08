@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:nexara/consts.dart';
+import 'package:nexara/themes.dart';
 import 'package:nexara/welcome.dart';
 void main()  {
   Gemini.init(
@@ -15,10 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: ThemeClass.lightTheme,
+        darkTheme: ThemeClass.darkTheme,
       home: const MyApp1(),
     );
   }

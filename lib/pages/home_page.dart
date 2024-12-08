@@ -5,6 +5,7 @@ import 'package:dash_chat_2/dash_chat_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:nexara/themes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -27,15 +28,18 @@ class _HomePageState extends State<HomePage> {
   );
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text(
-          "Gemini Chat",
+    return MaterialApp(
+      theme: ThemeClass.lightTheme,
+      darkTheme: ThemeClass.darkTheme,
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text(
+            "Nexara Chat",
+          ),
         ),
+        body: _buildUI(),
       ),
-      backgroundColor: const Color(0xff000117),
-      body: _buildUI(),
     );
   }
 
@@ -46,7 +50,7 @@ class _HomePageState extends State<HomePage> {
           onPressed: _sendMediaMessage,
           icon: const Icon(
             Icons.image,
-            color: Colors.white,
+            color: Colors.blueAccent,
           ),
         )
       ]),
